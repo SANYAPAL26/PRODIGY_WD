@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 1</title>
+    <link rel="shortcut icon" href="../assests/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <section class="wrapper">
+        <h1 class="hero-title">Let’s talk about scopes in Js</h1>
+        <p>
+            Generally, scope means the region of a variable where it can be accessed. There are three different scopes available in Js. They are
+        </p>
+        <ul>
+            <li>Global scope</li>
+            <li>Block scope</li>
+            <li>Function scope</li>
+        </ul>
+
+        <article>
+            <h3>Global scope :</h3>
+            <p>Global scope means the particular value or variable can be accessed from anywhere like from a function or nested block.</p>
+            <h3>Block scope:</h3>
+            <p>Block scope means the particular value or variable can be accessed only within the block where it is
+                declared or
+                created.</p>
+            <h3>Function scope:</h3>
+            <p>Function scope defines that particular value or variable can be accessed only within the function it is
+                declared
+                or
+                created.</p>
+
+        </article>
+
+        <article>
+            <p>So in Javascript, one can declare a variable using let/const/var.
+                Basically, we can divide those into two.</p>
+            <ul>
+                <li>let/const - block level scoped</li>
+                <li>Var - function level scoped</li>
+            </ul>
+            <h4>Var :</h4>
+            <p>
+                We can declare a variable using var.
+                If we use var, then it is function level scoped(if we declared inside a function) or global scoped if we
+                didn't
+                declared
+                inside of any function
+            </p>
+            <img src="var.png" alt="var-code">
+            <h4>let/const :</h4>
+            <p>We can also declare a variable using let (for values that can change) or const( for values that has to be
+                constant or
+                for a reference variable)</p>
+            <ul>
+                <li>
+                    <p>A variable declared with const or let inside a function is visible only inside the function</p>
+                </li>
+                <li>
+                    <p>A variable declared with const or let inside a block is visible only inside a block</p>
+                </li>
+                <li>
+                    <p>A variable declared with const or let outside a block or function can be accessed anywhere</p>
+                </li>
+            </ul>
+            <img src="context.png" alt="var-code">
+        </article>
+    </section>
+
+</body>
+
+</html>

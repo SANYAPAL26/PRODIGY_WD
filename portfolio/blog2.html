@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 1</title>
+    <link rel="shortcut icon" href="../assests/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <section class="wrapper">
+        <h1 class="hero-title">Get started with Firebase🔥</h1>
+        <p>
+            <a href="https://firebase.google.com/">Firebase</a> is a Backend-as-a-Service (BaaS). It is owned by Google
+            itself. It provides a complete backend for our web app. Firebase also provides SDK for mobile, web and
+            server-side languages. The services it offers are
+        </p>
+        <ul>
+            <li>Authentication</li>
+            <li>Firestore</li>
+            <li>Storage</li>
+            <li>Hosting</li>
+            <li>Serverless functions</li>
+            <li>Machine Learning</li>
+        </ul>
+
+        <article>
+            <h3>Authentication</h3>
+            <p>Firebase provides us with many popular authentication providers like Google, Facebook, GitHub, etc.
+                So we don't have to worry about authentication. And it also makes user management easy. For using
+                firebase authentication use <a href="https://firebase.google.com/docs/auth">this link</a></p>
+
+        </article>
+        <article>
+            <h3>Firebase Firestore</h3>
+            <p>Firestore is a document-based database. So, all the data we store in it will be in collection and document
+                form. And we can also listen for real-time updates that happen in a particular collection or document.
+                For
+                using firebase firestore use <a href="https://firebase.google.com/docs/firestore">this
+                    link</a>
+            </p>
+        </article>
+        <article>
+            <h3>Firebase Storage</h3>
+            <p>Storage is a service in which we can save our media, it can be either images or docs. We can easily save
+                them. For
+                using firebase firestore use <a href="https://firebase.google.com/docs/storage">this
+                    link</a>
+            </p>
+        </article>
+        <article>
+            <h3>Rules for databases</h3>
+            <p>Firebase also let us define rules for accessing the data in the database. We can define a rule like
+                only authenticated users can access a particular document or a collection.</p>
+        </article>
+        <article>
+            <h3 style="text-align:center;">Simple Demo for using authentication for react project</h3>
+            <ol>
+                <li>Create a project for our web app in Firebase console</li>
+                <li>copy the firebase config object</li>
+                <li>Create a react project using cra</li>
+                <li>Create a .js file and paste the config object</li>
+                <li>Run the command <code>npm i firebase</code></li>
+                <li>Create a Login button using the below code</li>
+                <img src="../assests/auth-example.png" alt="">
+                <li>Whenever the user clicks the login the login handler will
+                    be called and a popup for Google login will
+                    opened for authentication</li>
+                <li>But whenever the user reloads a page the user was logged out automatically. So to solve that we can use
+                    context api and a function Firebase provides us</li>
+                <img src="auth-example.png" alt="">
+                <li><code>onAuthStateChanged</code> is a function that will listen for any auth user changes</li>
+                <li><code>user</code> value we passed as callback function in <code>onAuthStateChanged</code> will
+                    provide the details about the user like
+                    user id, email etc.,</li>
+            </ol>
+        </article>
+    </section>
+
+</body>
+
+</html>

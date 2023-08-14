@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanya Portfolio</title>
+    <link rel="shortcut icon" href="portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be9aee311f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">
+                <a href="#home"><img src="portfolio.png" alt="Sanya" logo"></a>
+            </div>
+            <i class="fa-solid fa icon hamburger-line fa-bars"></i>
+
+        </div>
+        <ul id="navbar-ul">
+            <li><a href="#blogs">Blog Posts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="home" id="home">
+        <div class="picture left">
+            <img src="portfolio.gif" alt="portfolio photo">
+        </div>
+        <div class="right">
+            <h4 class="name animate">Sanya</h4>
+            <h1 class="work animate"><span class="web animate">Web</span> <span class="dev animate">Developer</span>
+            </h1>
+            <p>My name is Sanya Pal. I am currently pursuing BTech in the Internet of Things(IoT) branch from the Noida Institute of Engineering and Technology Greater Noida. 
+I completed my schooling at RLB Memorial School, Lucknow.</p>
+        </div>
+    </section>
+ 
+
+    </section>
+    <section id="blogs" class="blog-posts">
+        <h2 class="hero-title">Blog Posts</h2>
+
+        <div class="blog">
+            <div class="left button-group">
+                <a href="file:///C:/Users/Shashi%20Kant/Desktop/portfolio/blog1.html" class="button ">Read More</a>
+            </div>
+            <div class="right">
+                <h1 class="title">Scopes In JavaScript</h1>
+                <p>Scope refers to the availability of variables and functions in certain parts of the code. Let deep dive into that topic
+                </p>
+        </div>
+        </div>
+        <div class="blog">
+            <div class="left button-group">
+                <a href="file:///C:/Users/Shashi%20Kant/Desktop/portfolio/blog2.html" class="button ">Read More</a>
+            </div>
+            <div class="right">
+                <h1 class="title">Get started with Firebase🔥</h1>
+                <p>Firebase is a Backend-as-a-Service (BaaS). It is owned by Google itself. It provides a complete backend for our web app. Firebase also provides SDK for mobile, web and server-side languages. The services it offers are:-
+
+    <li>Authentication</li>
+    <li>Firestore</li>
+    <li>Storage</li>
+    <li>Hosting</li>
+    <li>Serverless functions</li>
+    <li>Machine Learning</li> </p>
+        </div>
+        </div>
+    </section>
+    <section id="about" class="about-me">
+        <h2 class="hero-title">About Me</h2>
+        <div class="about">
+            <div class="left bottom-pic">
+                <div class="picture">
+                    <img src="download.jpeg" alt="Sanya photo">
+                </div>
+            </div>
+            <div class="right">
+                <p> I am a resident of, Lucknow Uttar Pradesh and I am currently working as an intern in an esteemed company named Prodigy Infotech and am very grateful to be a part of it. I am currently working on my skills to enhance its efficiency and effectiveness. I take pride in being a hard-working and self-motivated individual, always striving for excellence. In my leisure time, I indulge in reading books and practicing yoga to nurture my mind and body.</p>
+                <div>
+                    <h2 class="title">My tech stack</h2>
+                    <span>I'm proficient with the following relevant technologies:</span>
+                    <ul id="tech">
+                        <li><img style="border-radius:0"
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+                                alt=""></li>
+                        <li><img style="border-radius:0"
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+                                alt=""></li>
+                        <li><img style="border-radius:0"
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+                                alt=""></li>
+                        <li><img style="border-radius:0"
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg"
+                                alt=""></li>
+                        <li><img style="border-radius:0"
+                                src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+                                alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="hero-title">Contact</h3>
+        <div>
+            <div class="left">
+                <h2 class="name">Sanya</h2>
+                <p class="des">I am a Frontend Web Developer proficient in building web applications using Visual Studio Code. My future aspirations involve venturing into full-stack development and mastering Data Structures and Algorithms (DSA).
+                </p>
+            </div>
+            <div class="socials right">
+
+                <h4>social links</h4>
+                <ul class="socials">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/sanya-pal-b3a113265/"><i
+                                class="fa-brands icon fa fa-linkedin"></i></a></li>
+                </ul>
+
+                <div id="contact" class="contact">
+                    <i class="fa-solid icon fa fa-at"></i> <a
+                        href="mailto:sanyapal26@gmail.com>sanyapal26@gmail.com</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">© Copyright <span id="year"></span>. Made by <a
+                href="mailto:sanyapal26@gmail.com"> Sanya</a></div>
+        <script>
+            document.querySelector('#year').textContent = new Date().getFullYear()
+        </script>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
